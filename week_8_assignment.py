@@ -2,7 +2,7 @@ import os
 
 def main():
     directory = input("Enter the path to your file: ")
-    filename = input("Enter filename: ")
+    filename = input("Enter filename (please include the file extension - ex: .txt): ")
     if os.path.isdir(directory): # this checks if the path is indeed in the directory
         writeFile = open(os.path.join(directory,filename),'w') # creating and opening the file to write
         name = input("What is your name? ")
